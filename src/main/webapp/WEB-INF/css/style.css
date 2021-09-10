@@ -1,0 +1,209 @@
+/* Swift Database CSS */
+
+html {
+    background-color: #e0e0e0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+
+.filterBG {
+    background: #000000;
+    text-align: center;
+}
+
+h2 {
+    font-family: Helvetica;
+    text-align: center;
+    font-weight: 800;
+    font-size: 38px;
+    color: #000000;
+    letter-spacing: 2px;
+    padding-top: 100px;
+    padding-bottom: 15px;
+    text-shadow: 1px 1px 1px gold,
+                 2px 2px 1px gold;
+}
+
+table {
+    margin-left:auto;
+    margin-right:auto;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+
+td {
+    font-size: 12px;
+    text-align: center;
+}
+
+th {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 400;
+    border-bottom: 0;
+    letter-spacing: 1px;
+    vertical-align: middle;
+    padding: 8px;
+    background: #33373d;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+#tableData{
+    background-color: #ffffff;
+}
+
+#tableData:nth-child(even)
+{background: #e8e8e8}
+
+
+#tableData:hover {
+    background-color: #d1a827;
+}
+
+input[type=text] {
+    font-size: 1em;
+    font-family: Helvetica;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 1.75em;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: left;
+    border: 1px solid #545454;
+    border-radius: 2px;
+}
+
+/* ---------------------------------------------------
+                SIDEBAR / HEADER
+----------------------------------------------------- */
+
+header {
+    position: fixed;
+    background: #161b24;
+    width: 100%;
+    height: 70px;
+}
+
+header .left h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: -14px;
+    padding-left: 5px;
+}
+
+.sidebar {
+    margin-top: 70px;
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 220px;
+    height: 100%;
+    background: #33373d;
+    color: #fff;
+    transition: 0.5s;
+    transition-property: left;
+    overflow-y: scroll;
+}
+
+.sidebar ul li a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    text-decoration: none;
+    padding-left: 15px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    transition-property: background;
+    padding-bottom: 5px;
+}
+
+label #sidebar_btn {
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    cursor: pointer;
+    left: 307px;
+    font-size: 25px;
+    margin: 11px 0;
+    transition: 0.5s;
+    transition-property: color;
+}
+
+button{
+    background-color: white;
+    border: none;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+
+}
+
+button:hover{
+    color: #d1a827;
+}
+
+label #sidebar_btn:hover {
+    color: #cea204;
+}
+
+#check:checked ~ .sidebar {
+    left: -220px;
+}
+
+#check:checked ~ .content{
+    margin-left: 0px;
+}
+
+#check {
+    display: none;
+}
+
+.sidebar ul.components {
+    padding: 20px 0;
+    border-bottom: 1px solid #47748b;
+}
+
+.sidebar ul li a:hover {
+    color: #5d646e;
+    background: #fff;
+}
+
+ul ul a {
+    font-size: 0.9em;
+    padding-left: 30px;
+    background: #5d646e;
+}
+
+.content {
+    margin-left: 220px;
+    height: 100vh;
+    transition: all 0.5s;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #e0e0e0;
+}
+
+.company_logo {
+    padding-right: 10px;
+    padding-left: 5px;
+    height: 50px;
+    width: 75px;
+}
